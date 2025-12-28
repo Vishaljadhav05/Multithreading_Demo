@@ -1,4 +1,4 @@
-# 🧵 Multithreading Learning Repository
+# Multithreading Learning Repository
 
 This repository is created to **learn and practice the concept of Multithreading**.  
 It contains examples, notes, and hands-on code to understand how multiple threads
@@ -6,7 +6,7 @@ can run concurrently within a single process.
 
 ---
 
-## 📌 What I’m Learning
+## What I’m Learning
 
 - Basics of Multithreading
 - Process vs Thread
@@ -21,7 +21,7 @@ can run concurrently within a single process.
 
 ---
 
-## 💻 Technologies Used
+##  Technologies Used
 
 - Java
 - Core Java Concurrency APIs
@@ -29,7 +29,7 @@ can run concurrently within a single process.
 
 ---
 
-## 🎯 Learning Goals
+##  Learning Goals
 
 - Understand how multithreading improves performance
 - Write efficient and thread-safe programs
