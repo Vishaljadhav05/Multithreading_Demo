@@ -1,0 +1,78 @@
+=> Multithreading :- Multithreading is the part which which multiple threads (sub-process) are executed at single time.
+Examples :
+1. Word
+2. VLC
+3. Games
+4. Animations
+5. Browser
+6. Web-servers
+etc
+
+
+ Multithreading is mostly implemented by java itself, we have to implement less part of multithreading.
+ Java provides API for multithreading :-
+1. Thread
+2. Runnable
+3. ThreadGroup
+4. Concureency
+5. ThreadPool
+ etc
+
+=> What is difference between Process & Thread ?
+
+1. Process is the heavy-weight task performing multiple tasks
+Thread is the light-weight sub-process performing single task
+
+2. Process does not depends on each other
+Threads depends on each other
+
+3. Context switching is difficult in process (takes more time)
+Context switching is easy in threads (takes less time)
+
+4. Process shares the different address space
+Threads shares the same address space
+
+5. Process does not require synchronization
+Threads requires synchronization
+
+-------------------------------------------------------------------------------------------------------------
+
+=> How to create threads :
+-> There are 2 ways to create threads :-
+1. By using "Thread" class
+2. By using "Runnable" interface
+
+
+---------------------------------------------------------------------------------------------------------------
+
+=> What is "Thread" :- Thread is the pre-defined class which is present in java.lang package
+
+ Syntax :
+class Thread implements Runnable
+{
+    //constructors
+    //methods
+    run()
+    start()
+    etc
+}
+
+---------------------------------------------------------------------------------------------------------------
+
+
+=> What is "Runnable" :- Runnable is pre-defined interface present in java.lang package
+
+ Syntax :
+interface Runnable
+{
+    //method
+    run()
+}
+
+---------------------------------------------------------------------------------------------------------------
+
+
+=> Which is better way to create thread, Thread or Runnable ?
+-> Runnable is better way to create threads in java because if we inherit Thread class then we were 
+not able to inherit any other class as multiple inheritance is not supported in java but if we inherit 
+Runnable interface then we can inherit more interfaces and can inherit the class also
