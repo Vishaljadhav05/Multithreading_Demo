@@ -1,0 +1,59 @@
+=> ThreadPool :- ThreadPool represents a group of worker threads that are waiting for the job and can be reused many times
+
+
+-> "ThreadPool framework" is also known as "Executor framework"
+-> ThreadPool was introduced in JDK 1.5 version
+
+-> Advantage : It saves a lot of time in creating threads and providing jobs to them which leads to the better performance of our application
+
+-> ThreadPool is already implemented in Servlet & JSP containers which each request is processed by thread which comes from thread-pool
+
+-> ThreadPool framework contains following classes and interfaces :-
+1. Executors (class) (important)
+2. ExecutorService (interface) (important)
+3. Executor (interface)
+4. ExecutorCompletionService (class)
+
+----------------------------------------------------------------------------------------------------------------
+
+=> Executors class :- Executors class provides factory and utility methods for ExecutorService, 
+Executor, ThreadFactory, ScheduledExecutor Service & Callable.
+
+-> Methods of Executors class :
+    1. Executors.newFixedThreadPool(int no_of_threads)
+    2. Executors.newSingleThreadExecutor()
+    3. Executors.newCachedThreadPool()
+    4. Executors.newScheduledThreadPool()
+    5. Executors.newSingleThreadScheduledExecutor()
+
+---------------------------------------------------------------------------------------------------------------
+
+
+=> ExecutorService interface :- ExecutorService interface allows us to execute the thread task asynchronously.
+
+-> ExecutorService helps in maintaining a pool of threads and assign them tasks. It also provides the facility 
+to queue up the tasks until there is any free thread available.
+
+-> ExecutorService defines the methods that executes the threads and returns some results.
+
+
+-> Methods of ExecutorService interface :-
+	 Below methods will assign the task to ExecutorService :-
+		1. execute(Runnable r)
+		2. submit(Runnable/Callable r)
+		3. invokeAny(Collection c)
+		4. invokeAll(Collection c)
+	 Below method is used for shutdown the ExecutorService :-
+		5. shutdown()
+		6. shutdownNow()
+
+---------------------------------------------------------------------------------------------------------------
+
+
+=> ThreadPool have some risks which are as follows :-
+1. Deadlock
+2. Thread interference
+3. Thread leakage : This risk can occur if any thread removed from the thread-pool but that 
+                    thread didnt returned in the thread-pool
+4. Resource thrashing : This risk can occur when there are lot of thread in the thread-pool,
+                     then time will be wasted in context-switching between the threads.
