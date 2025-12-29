@@ -1,0 +1,36 @@
+=> ThreadGroup :-
+
+-> It is the group of several threads into a single unit or object
+-> A thread-group can contain multiple thread-group
+-> The thread-group creates a tree in which every thread-group will a single parent thread-group
+-> Every thread-group belongs to some thread-group except system thread-group
+-> "system" thread-group is the root group of all the thread-groups in java
+-> Main thread belongs to the "main" thread-group
+
+---------------------------------------------------------------------------------------------------
+
+-> The main advantage of thread-group is we can perform several common operations 
+   very easily in order to improve our application performance
+-> For example : creating groups in messenger or mails and sending message
+-> ThreadGroup is the class which is present in java.lang package
+
+-> Constructors of ThreadGroup :-
+    1. public ThreadGroup(String name);
+    2. public ThreadGroup(ThreadGroup groupname, String name)
+
+-> Methods of ThreadGroup :-
+    1. activeCount()
+    2. activeGroupCount()
+    3. getMaxPriority()
+    4. getName()
+    5. getParent()
+    6. setMaxPriority()
+    7. list()
+    8. isDaemon()
+    9. setDaemon()
+    10. interrupt()
+    11. suspend()
+    12. destroy()
+
+-> A current running thread can only get the information about current thread-group but not the 
+   parent/child thread-group
